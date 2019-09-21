@@ -1,0 +1,11 @@
+﻿@using WebApplication15.Models
+@model IEnumerable<WebApplication15.Models.User>
+<h1>List</h1>
+
+@{ 
+    foreach (User user in Model)
+    {
+        <div>@user.Username</div>
+    }
+
+}
